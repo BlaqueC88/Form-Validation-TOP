@@ -1,0 +1,86 @@
+:root {
+  --header: 3rem;
+  --footer: 40px;
+  --main: calc(100vh - calc(var(--header) + var(--footer)));
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px solid transparent;
+  background-color: white;
+}
+
+#container{
+  border: 0px solid transparent;
+  height: 100vh;
+  color: #1f2a65;
+}
+
+#container > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header {
+  height: var(--header);
+  background-color: #f1ddae;
+}
+
+#mainContent {
+  height: var(--main);
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgb(244, 244, 244);
+  position: relative;
+}
+
+#footer {
+  height: var(--footer);
+  background-color: #f1ddae;
+}
+
+.image_container {
+  height: 100%;
+  position: absolute;
+  left: 0px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.form_container {
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  width: 50%;
+}
+
+p {
+  object-fit: contain;
+}
+
+form {
+  object-fit: contain;
+}
+
+fieldset {
+  border: 2px solid #c5c1b6;
+  background-color:  white;
+  display: flex;
+  flex-direction: column;
+  object-fit: contain;
+}
+
+label {
+  font-size: 15px;
+}
+
+input {
+  height: 15px;
+  width: 50px;
+}
