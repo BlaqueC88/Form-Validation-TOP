@@ -1,71 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/Form-Validation-TOP/style.css">
-  <title>Form Validation</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Form-Validation-TOP/style.css">
+    <title>Form Validation</title>
+  </head>
   <body>
+    
+    <div class="contain">
 
-    <div id="container">
-
-      <header id="header">Header</header>
-
-      <main id="mainContent">
-        <div class="image_container">
-
-          <img src="/Form-Validation-TOP/images/room-bedroom_corn-silk__40yy-77_242.jpg" alt="bedroom">
-
+      <div class="wrapper">
+        <div class="contacts">
+          <h3>Our contacts</h3>
+    
+          <ul>
+            <li>Pretoria St.</li>
+            <li>+27 12 345 6789</li>
+            <li>dripcolor@mail.com</li>
+          </ul>
         </div>
-        <div class="form_container">
-
-          <p>This is not a real online service! You know you need something like this in your life to help you realize your dreams.</p>
-
-          <p>You know you want to.</p> 
-
-          <form action="example" method="post">
-
-            <fieldset>
-              <legend>Contact Details</legend>
-
-              <div class="name">
-                <label for="first_name">First Name:</label>
-                <input type="text" id="first_name" name="first_name">
-                <label for="last_name">Last Name:</label>
-                <input type="text" id="last_name" name="last_name">
-              </div>
-
-              <div class="contact">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
-                <label for="phone_number">Phone Number:</label>
-                <input type="tel" name="phone_number" id="phone_number">
-              </div>
-
-              <div class="security">
-                <label for="password">Password:</label>
-                <input type="password" name="password" id="password">
-                <label for="confirm_password">Confirm Password:</label>
-                <input type="password" name="confirm_password" id="confirm_password">
-              </div>
-
-            </fieldset>
-
-            <button type="submit" >Create Account</button> 
+    
+        <div class="form">
+          <h1>Drip Color</h1>
+          <p>We love hearing about your experiences with our customer service and products.</p>
+          <p>Let us know how we fare.</p>
+          <h3>Send us a message</h3>
+          <form action="URL" method="post">
             <p>
-              <a href="">Already have an account? Log in.</a>
+              <label for="first_name">First Name</label>
+              <input type="text" id="first_name" name="first_name">
             </p>
-
+            <p>
+              <label for="last_name">Last Name</label>
+              <input type="text" id="last_name" name="last_name">
+            </p>
+            <p>
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="example@email.com">
+            </p>
+            <p>
+              <label for="tel">Phone Number</label>
+              <input type="tel" id="tel" name="tel" placeholder="+27 12 345 6789">
+            </p>
+            <p class="full-width">
+              <label for="">Write your message</label>
+              <textarea name="" id="" cols="30" rows="7"></textarea>
+            </p>
+            <p class="full-width">
+              <button>Send</button>
+            </p>
           </form>
         </div>
-        
-      </main>
-      
-      <footer id="footer">footer</footer>
-
+      </div>
     </div>
-
+  
   </body>
 </html>
